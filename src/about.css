@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Special+Elite&display=swap');
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/about_background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.about-header {
+    margin: 50px 1em 0px 1em;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-container {
+    position: relative;
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transform: rotate(-5deg);
+}
+
+.image-container h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  color: #c1282d;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.6em;
+  text-align: center;
+}
+
+.about-header>p {
+    max-width: 40%;
+    color: #ee2b31;
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5;
+}

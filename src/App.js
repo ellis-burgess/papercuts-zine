@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import LandingPage from "./landing-page";
+import About from './about';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("/");
@@ -52,6 +53,7 @@ function App() {
       {/* Routes */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<About />} />
       </Routes>{" "}
     </BrowserRouter>
   );
