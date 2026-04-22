@@ -1,5 +1,5 @@
-import './style-sheets/landing-page.css';
-import BloodyHand from './img/homepage_bloody_hand.png';
+import '../style-sheets/LandingPage.css';
+import BloodyHand from '../img/homepage_bloody_hand.png';
 
 function Hero() {
   return (

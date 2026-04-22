@@ -1,9 +1,9 @@
 import "./style-sheets/App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import LandingPage from "./landing-page";
-import About from './about';
-import LatestVolume from './latest-volume';
+import LandingPage from "./components/LandingPage";
+import About from './components/About';
+import LatestVolume from './components/LatestVolume';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("/");

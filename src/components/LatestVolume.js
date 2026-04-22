@@ -1,5 +1,5 @@
-import './style-sheets/latest-volume.css';
-import Paper from './img/paper_strip_1.png';
+import '../style-sheets/LatestVolume.css';
+import Paper from '../img/paper_strip_1.png';
 
 function ZineEmbed() {
     return (
