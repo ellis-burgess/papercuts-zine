@@ -23,7 +23,7 @@ function LatestVolume() {
             <ZineEmbed />
             <div className="lv-image-container cta">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
-                <p>Like what you see? <a href="">Consider donating.</a></p>
+                <p>Like what you see?<br/><a href="https://ko-fi.com/papercutszinecdf">Consider donating.</a></p>
             </div>
         </section>
     )
