@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import LandingPage from "./landing-page";
 import About from './about';
+import LatestVolume from './latest-volume';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("/");
@@ -54,6 +55,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/latest" element={<LatestVolume />} />
       </Routes>{" "}
     </BrowserRouter>
   );

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Special+Elite&display=swap');
+
+.latest-volume {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-image: url(./img/view_zine_background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 65px;
+    overflow-x: hidden;
+}
+
+.lv-image-container {
+    position: relative;
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.lv-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.lv-image-container.header {
+    align-self: flex-start;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.lv-image-container.header img {
+    transform: rotate(-5deg);
+}
+
+.lv-image-container.cta {
+    align-self: flex-end;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 50px;
+}
+
+.lv-image-container.cta img {
+    transform: rotate(5deg);
+}
+
+.lv-image-container h1, .lv-image-container p {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 100%;
+}
+
+.lv-image-container h1 {
+    color: #c1282d;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.6em;
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+.lv-image-container p {
+    color: #000;
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+    font-size: 1.6em;
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.zine-embed {
+    min-height: 80vh;
+}
