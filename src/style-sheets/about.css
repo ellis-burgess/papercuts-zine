@@ -3,7 +3,7 @@
 .about {
     min-height: 100vh;
     width: 100%;
-    background-image: url(./img/about_background.jpg);
+    background-image: url(../img/about_background.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@
 }
 
 .about-grid-item {
-    background-image: url(./img/paper_strip_bg.png);
+    background-image: url(../img/paper_strip_bg.png);
     background-size: cover;
 }
 

@@ -1,4 +1,4 @@
-import './landing-page.css';
+import './style-sheets/landing-page.css';
 import BloodyHand from './img/homepage_bloody_hand.png';
 
 function Hero() {

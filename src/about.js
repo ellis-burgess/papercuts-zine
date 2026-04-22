@@ -1,4 +1,4 @@
-import './about.css';
+import './style-sheets/about.css';
 import Paper from './img/paper_strip_1.png';
 
 function About() {

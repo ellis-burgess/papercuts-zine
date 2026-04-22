@@ -1,4 +1,4 @@
-import "./App.css";
+import "./style-sheets/App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import LandingPage from "./landing-page";

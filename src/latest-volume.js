@@ -1,4 +1,4 @@
-import './latest-volume.css';
+import './style-sheets/latest-volume.css';
 import Paper from './img/paper_strip_1.png';
 
 function ZineEmbed() {
