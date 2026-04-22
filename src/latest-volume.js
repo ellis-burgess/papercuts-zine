@@ -9,7 +9,7 @@ function ZineEmbed() {
             scrolling="no"
             className="fp-iframe zine-embed"
             style={{border: '1px solid lightgray', width: '100%', height: '400px'}}
-            src="https://heyzine.com/flip-book/53971b689e.html" />
+            src="https://heyzine.com/flip-book/c1736e1227.html" />
     );
 }
 
