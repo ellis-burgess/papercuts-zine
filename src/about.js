@@ -6,7 +6,7 @@ function About() {
         <section className="about">
             <div className="about-header">
                 <div className="image-container">
-                    <img src={Paper} />
+                    <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                     <h1>What is Papercuts?</h1>
                 </div>
                 <p>
