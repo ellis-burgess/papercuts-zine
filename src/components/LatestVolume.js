@@ -1,17 +1,6 @@
 import '../style-sheets/LatestVolume.css';
 import Paper from '../img/paper_strip_1.png';
-
-function ZineEmbed() {
-    return (
-        <iframe
-            allowfullscreen="allowfullscreen"
-            allow="clipboard-write"
-            scrolling="no"
-            className="fp-iframe zine-embed"
-            style={{border: '1px solid lightgray', width: '100%', height: '400px'}}
-            src="https://heyzine.com/flip-book/c1736e1227.html" />
-    );
-}
+import ZineEmbed from './ZineEmbed';
 
 function LatestVolume() {
     return (
@@ -20,7 +9,7 @@ function LatestVolume() {
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                 <h1>Latest Volume</h1>
             </div>
-            <ZineEmbed />
+            <ZineEmbed src_url={"https://heyzine.com/flip-book/c1736e1227.html"} />
             <div className="lv-image-container cta">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                 <p>Like what you see?<br/><a href="https://ko-fi.com/papercutszinecdf">Consider donating.</a></p>
