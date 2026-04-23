@@ -28,11 +28,11 @@ function LatestVolume() {
                 <h1>Latest Volume</h1>
             </div>
             {loading ? (
-                <p>Loading...</p>
+                <div className="zine-embed"><p>Loading...</p></div>
             ) : srcUrl ? (
                 <ZineEmbed src_url={srcUrl} />
             ) : (
-                <p>Unable to load zine.</p>
+                <div className="zine-embed"><p>Unable to load zine.</p></div>
             )}
             <div className="lv-image-container cta">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />

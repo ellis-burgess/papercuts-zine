@@ -82,4 +82,19 @@ a:hover {
 
 .zine-embed {
     min-height: 80vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.zine-embed p {
+    font-family: 'Special Elite', 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: #000;
+    text-align: center;
+    margin-top: 2em;
+    background-color: #fff;
+    padding: 1em;
 }
