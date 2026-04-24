@@ -1,5 +1,5 @@
 import "./style-sheets/App.css";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import LandingPage from "./components/LandingPage";
 import About from './components/About';
@@ -49,7 +49,7 @@ function NavBar() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* Navigation */}
       <NavBar />
       {/* Routes */}
@@ -59,7 +59,7 @@ function App() {
         <Route path="/archive" element={<Archive />} />
         <Route path="/latest" element={<LatestVolume />} />
       </Routes>{" "}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
