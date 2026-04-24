@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Special+Elite&display=swap');
+
+.archive {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/archive_background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.archive-header {
+    align-self: flex-start;
+    margin-top: 65px;
+    margin-left: 1em;
+}
+
+.zine-cards {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(370px, 1fr) );
+    gap: 2em;
+    width: 90%;
+    padding-bottom: 2em;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}

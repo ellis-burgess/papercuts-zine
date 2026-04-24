@@ -1,3 +1,4 @@
+import '../style-sheets/Archive.css';
 import { useState, useEffect } from 'react';
 import Paper from '../img/paper_strip_1.png';
 import { fetchVolumesData } from '../utils/csvParser';
@@ -27,7 +28,7 @@ function Archive() {
 
     return (
         <section className="archive">
-            <div className="archive">
+            <div className="archive-header">
                 <div className="image-container header">
                     <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                     <h1>Archive</h1>
