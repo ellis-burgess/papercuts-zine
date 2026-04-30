@@ -36,3 +36,9 @@
     opacity: 1;
     text-decoration: none;
 }
+
+@media screen and (max-width: 400px) {
+    .nav-list {
+        flex-direction: column;
+    }
+}

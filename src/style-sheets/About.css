@@ -140,3 +140,9 @@ a:hover {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
     }
 }
+
+@media (max-width: 400px) {
+    .header {
+        margin-top: 200px;
+    }
+}
