@@ -1,28 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Special+Elite&display=swap');
 
-.about {
+section {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../img/about_background.jpg);
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
+
 }
 
-.about-header {
-    margin: 65px 1em 0px 1em;
-    display: flex;
-    flex-flow: row;
+.about {
+    background-image: url(../img/about_background.jpg);
+    background-size: cover;
+}
+
+.header {
+    width: 90%;
+    margin-top: 80px;
+    display: grid;
+}
+
+.about .header {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
     align-items: center;
-    justify-content: space-around;
+    gap: 2em;
 }
 
 .image-container {
     position: relative;
     width: 500px;
-    flex-shrink: 0;
+    display: inline-block;
+    align-self: start;
+}
+
+.about .header .image-container {
+    margin-top: 25px;
 }
 
 .image-container img {
@@ -43,15 +57,19 @@
   text-align: center;
 }
 
-.about-header>p {
-    max-width: 40%;
+.header>p {
     color: #ee2b31;
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
     font-size: 1.5em;
     line-height: 1.5;
+    display: block;
+    justify-self: center;
+    max-width: 20em;
+    align-self: start;
+    margin: 0;
 }
 
-.about-grid {
+.grid {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(370px, 1fr) );
     gap: 2em;
@@ -59,7 +77,7 @@
     padding-bottom: 2em;
 }
 
-.about-grid h2 {
+.grid h2 {
     color: #ee2b31;
     font-family: 'Indie Flower', cursive;
     font-size: 2em;
@@ -68,12 +86,12 @@
     text-align: left;
 }
 
-.about-grid-item {
+.grid-item {
     background-image: url(../img/paper_strip_bg.png);
     background-size: cover;
 }
 
-.about-grid-item p {
+.grid-item p {
     padding: 20px;
     color: #c1282d;
     font-family: 'Special Elite', 'Courier New', Courier, monospace;
@@ -89,4 +107,36 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .about .header {
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    }
+
+    .image-container {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about .header {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .image-container {
+        width: 300px;
+    }
+
+    .image-container h1 {
+        font-size: 2em;
+    }
+
+    .header>p {
+        font-size: 1.2em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    }
 }

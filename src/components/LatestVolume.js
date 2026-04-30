@@ -23,7 +23,7 @@ function LatestVolume() {
 
     return (
         <section className="latest-volume">
-            <div className="lv-image-container header">
+            <div className="image-container header">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                 <h1>Latest Volume</h1>
             </div>
@@ -34,7 +34,7 @@ function LatestVolume() {
             ) : (
                 <div className="zine-embed"><p>Unable to load zine.</p></div>
             )}
-            <div className="lv-image-container cta">
+            <div className="image-container cta">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                 <p>Like what you see?<br/><a href="https://ko-fi.com/papercutszinecdf">Consider donating.</a></p>
             </div>

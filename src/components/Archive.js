@@ -28,23 +28,23 @@ function Archive() {
 
     return (
         <section className="archive">
-            <div className="archive-header">
-                <div className="image-container header">
+            <div className="header">
+                <div className="image-container">
                     <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
                     <h1>Archive</h1>
                 </div>
             </div>
 
             {loading ? (
-                <div className="zine-cards"><p>Loading...</p></div>
+                <div className="grid zine-cards"><p>Loading...</p></div>
             ) : volumes ? (
-                <div className="zine-cards">
+                <div className="grid zine-cards">
                     {volumes.map((item, index) => (
                         <ZineCard volumeData={item} index={index} />
                     ))}
                 </div>
             ) : (
-                <div className="zine-cards"><p>Unable to load zines.</p></div>
+                <div className="grid zine-cards"><p>Unable to load zines.</p></div>
             )}
         </section>
     )
