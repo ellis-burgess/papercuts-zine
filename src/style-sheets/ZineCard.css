@@ -1,4 +1,5 @@
 .zine-card {
+    max-width: 90%;
     width: 370px;
     margin: 20px;
     background-color: #fff;
