@@ -1,3 +1,4 @@
+import Link from "react-router-dom";
 import '../style-sheets/LandingPage.css';
 import BloodyHand from '../img/homepage_bloody_hand.png';
 
@@ -14,7 +15,7 @@ function InfoSection() {
   return (
     <section className="info">
       <h2 class="info-title">We want to unnerve you.</h2>
-      <a href="/latest"><button class="info-button">Read now</button></a>
+      <Link to="/latest"><button class="info-button">Read now</button></Link>
     </section>
   )
 }
