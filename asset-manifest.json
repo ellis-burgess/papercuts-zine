@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfc943cb.css",
-    "main.js": "/static/js/main.39068fa1.js",
+    "main.css": "/static/css/main.49c36c77.css",
+    "main.js": "/static/js/main.91273264.js",
     "static/media/paper_strip_bg.png": "/static/media/paper_strip_bg.113435736883f67332ea.png",
     "static/media/view_zine_background.jpg": "/static/media/view_zine_background.adcc7f372f24b313d41e.jpg",
     "static/media/hands_background.jpg": "/static/media/hands_background.f2c3c95647874e5fcd24.jpg",
@@ -10,11 +10,11 @@
     "static/media/archive_background.jpg": "/static/media/archive_background.8ee2f63aca37bed82eb7.jpg",
     "static/media/about_background.jpg": "/static/media/about_background.79f6a8a25559668f6612.jpg",
     "index.html": "/index.html",
-    "main.bfc943cb.css.map": "/static/css/main.bfc943cb.css.map",
-    "main.39068fa1.js.map": "/static/js/main.39068fa1.js.map"
+    "main.49c36c77.css.map": "/static/css/main.49c36c77.css.map",
+    "main.91273264.js.map": "/static/js/main.91273264.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfc943cb.css",
-    "static/js/main.39068fa1.js"
+    "static/css/main.49c36c77.css",
+    "static/js/main.91273264.js"
   ]
 }
