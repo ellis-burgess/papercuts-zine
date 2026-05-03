@@ -1,4 +1,4 @@
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../style-sheets/LandingPage.css';
 import BloodyHand from '../img/homepage_bloody_hand.png';
 
