@@ -26,6 +26,18 @@
     width: 100%;
 }
 
+.cta p {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%) rotate(5deg);
+  color: #000;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.6em;
+  text-align: center;
+}
+
 a {
     text-decoration: underline;
     color: inherit;
