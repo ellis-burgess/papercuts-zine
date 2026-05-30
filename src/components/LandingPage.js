@@ -15,7 +15,7 @@ function InfoSection() {
   return (
     <section className="info">
       <h2 class="info-title">We want to unnerve you.</h2>
-      <Link to="/#/latest"><button class="info-button">Read now</button></Link>
+      <Link to="/latest"><button class="info-button">Read now</button></Link>
     </section>
   )
 }
