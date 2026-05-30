@@ -2,7 +2,7 @@
 
 .hero {
   background-color: #000;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-items: center;
@@ -42,7 +42,7 @@ span.title {
   padding: 0;
   margin: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,44 @@ span.title {
 }
 
 @media screen and (max-width: 800px) {
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
+
+  h1.hero-title {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+  }
+
+  span.title {
+    font-size: 2.5em;
+  }
+
   .hero-image {
-    width: 60%;
+    width: 85%;
+    max-width: 360px;
+    margin-top: 1rem;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .info {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .info > h2 {
+    font-size: 2rem;
   }
 }

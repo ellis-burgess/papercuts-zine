@@ -8,15 +8,18 @@ import Archive from './components/Archive';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("/");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
+    setMenuOpen(false);
   };
 
   return (
     <header>
       <nav className="navbar">
-        <ul className="nav-list">
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation menu">☰</button>
+        <ul className={menuOpen ? "nav-list open" : "nav-list"}>
           <li
             className={activeLink === "/" ? "nav-item active" : "nav-item"}
             onClick={() => handleLinkClick("/")}
