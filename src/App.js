@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage";
 import About from './components/About';
 import LatestVolume from './components/LatestVolume';
 import Archive from './components/Archive';
+import Volume from './components/Volume';
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("/");
@@ -61,6 +62,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/latest" element={<LatestVolume />} />
+        <Route path="/volume/:volumeName" element={<Volume />} />
       </Routes>{" "}
     </HashRouter>
   );

@@ -2,30 +2,34 @@ import { useState, useEffect } from 'react';
 import '../style-sheets/Volume.css';
 import Paper from '../img/paper_strip_1.png';
 import ZineEmbed from './ZineEmbed';
-import { fetchVolumesData, getLatestVolume } from '../utils/csvParser';
+import { fetchVolumesData, getVolumeByName } from '../utils/csvParser';
+import {useParams} from "react-router-dom";
 
-function LatestVolume() {
+function Volume() {
+    const { volumeName } = useParams();
     const [srcUrl, setSrcUrl] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    console.log("VolumeName: ", volumeName);
+
     useEffect(() => {
-        const loadLatestVolume = async () => {
+        const loadVolume = async () => {
             const volumesData = await fetchVolumesData();
-            const latestVolume = getLatestVolume(volumesData);
-            if (latestVolume) {
-                setSrcUrl(latestVolume.hey_zine_url);
+            const volume = getVolumeByName(volumesData, volumeName);
+            if (volume) {
+                setSrcUrl(volume.hey_zine_url);
             }
             setLoading(false);
         };
 
-        loadLatestVolume();
+        loadVolume();
     }, []);
 
     return (
         <section className="volume">
             <div className="image-container header">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
-                <h1>Latest Volume</h1>
+                <h1>{volumeName}</h1>
             </div>
             {loading ? (
                 <div className="zine-embed"><p>Loading...</p></div>
@@ -42,4 +46,4 @@ function LatestVolume() {
     )
 }
 
-export default LatestVolume;
+export default Volume;

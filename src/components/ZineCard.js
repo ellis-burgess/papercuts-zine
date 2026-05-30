@@ -1,19 +1,18 @@
 import '../style-sheets/ZineCard.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
-function ZineButton({ target_url }) {
+function ZineButton({ volume_name }) {
     return (
-        <a href={target_url}>
+        <Link to={`/volume/${volume_name}`}>
             <Button variant="primary">Read Now</Button>
-        </a>
+        </Link>
     );
 }
 
 function ZineCard({ volumeData, index }) {
-    console.log(volumeData);
     let img_src = `${process.env.PUBLIC_URL}/img/${volumeData.cover_img_name}`;
-    console.log(img_src);
 
     return (
         <Card className="zine-card">
@@ -24,7 +23,7 @@ function ZineCard({ volumeData, index }) {
                     First published: {volumeData.publication_date}
                 </Card.Text>
                 {volumeData.hey_zine_url ? (
-                    <ZineButton target_url={volumeData.hey_zine_url} />
+                    <ZineButton volume_name={volumeData.volume_name} />
                 ) : null}
             </Card.Body>
         </Card>
