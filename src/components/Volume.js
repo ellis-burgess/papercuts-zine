@@ -2,22 +2,24 @@ import { useState, useEffect } from 'react';
 import '../style-sheets/Volume.css';
 import Paper from '../img/paper_strip_1.png';
 import ZineEmbed from './ZineEmbed';
-import { fetchVolumesData, getVolumeByName } from '../utils/csvParser';
+import { fetchVolumesData, getVolumeByNumber } from '../utils/csvParser';
 import {useParams} from "react-router-dom";
 
 function Volume() {
-    const { volumeName } = useParams();
+    const { volumeNumber } = useParams();
     const [srcUrl, setSrcUrl] = useState(null);
+    const [volumeName, setVolumeName] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    console.log("VolumeName: ", volumeName);
+    console.log("volumeNumber: ", volumeNumber);
 
     useEffect(() => {
         const loadVolume = async () => {
             const volumesData = await fetchVolumesData();
-            const volume = getVolumeByName(volumesData, volumeName);
+            const volume = getVolumeByNumber(volumesData, volumeNumber);
             if (volume) {
                 setSrcUrl(volume.hey_zine_url);
+                setVolumeName(volume.volume_name);
             }
             setLoading(false);
         };
@@ -29,7 +31,13 @@ function Volume() {
         <section className="volume">
             <div className="image-container header">
                 <img src={Paper} alt="A strip of paper, serving as the background for the page title." />
-                <h1>{volumeName}</h1>
+                {loading ? (
+                    <h1>Loading...</h1>
+                ) : volumeName ? (
+                    <h1>{volumeName}</h1>
+                ) : (
+                    <h1>Volume {volumeNumber}</h1>
+                )}
             </div>
             {loading ? (
                 <div className="zine-embed"><p>Loading...</p></div>

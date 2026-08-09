@@ -36,3 +36,7 @@ export function getLatestVolume(volumesData) {
 export function getVolumeByName(volumesData, volumeName) {
     return volumesData.find(volume => volume.volume_name === volumeName) || null;
 }
+
+export function getVolumeByNumber(volumesData, volumeNumber) {
+    return volumesData.find(volume => volume.volume_number === volumeNumber) || null;
+}

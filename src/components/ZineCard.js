@@ -3,9 +3,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-function ZineButton({ volume_name }) {
+function ZineButton({ volume_number }) {
     return (
-        <Link to={`/volume/${volume_name}`}>
+        <Link to={`/volume/${volume_number}`}>
             <Button variant="primary">Read Now</Button>
         </Link>
     );
@@ -23,7 +23,7 @@ function ZineCard({ volumeData, index }) {
                     First published: {volumeData.publication_date}
                 </Card.Text>
                 {volumeData.hey_zine_url ? (
-                    <ZineButton volume_name={volumeData.volume_name} />
+                    <ZineButton volume_number={volumeData.volume_number} />
                 ) : null}
             </Card.Body>
         </Card>

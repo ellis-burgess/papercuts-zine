@@ -62,7 +62,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/latest" element={<LatestVolume />} />
-        <Route path="/volume/:volumeName" element={<Volume />} />
+        <Route path="/volume/:volumeNumber" element={<Volume />} />
       </Routes>{" "}
     </HashRouter>
   );
